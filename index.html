@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart Coupon Payment</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-100">
+    <header class="mx-24 py-8 flex justify-between gap-12 text-center">
+        <div>
+            <div class="rounded-full w-12 h-12 flex justify-center items-center p-12 mx-6 my-2 bg-teal-500">
+                <p class="text-2xl text-white">1</p>
+            </div>
+            <p class="text-xl text-green-700">Books</p>
+        </div>
+        <div>
+            <div class="rounded-full w-12 h-12 flex justify-center items-center p-12 mx-6 my-2 bg-teal-500">
+                <p class="text-2xl text-white">2</p>
+            </div>
+            <p class="text-xl text-green-700">Catagory</p>
+        </div>
+        <div>
+            <div class="rounded-full w-12 h-12 flex justify-center items-center p-12 mx-6 my-2 bg-teal-500">
+                <p class="text-2xl text-white">3</p>
+            </div>
+            <p class="text-xl text-green-700">Sun, Nov, 1, 2022</p>
+        </div>
+        <div>
+            <div class="rounded-full w-12 h-12 flex justify-center items-center p-12 mx-6 my-2 bg-teal-500">
+                <p class="text-2xl text-white">4</p>
+            </div>
+            <p class="text-xl text-green-700">Product</p>
+        </div>
+        <div>
+            <div class="rounded-full w-12 h-12 flex justify-center items-center p-12 mx-6 my-2 bg-orange-500">
+                <p class="text-2xl text-white">5</p>
+            </div>
+            <p class="text-xl text-orange-600">Payment</p>
+        </div>
+    </header>
+    <main class="mx-24 bg-white px-8">
+        <h1 class="text-2xl py-4 border-b-2 border-slate-100">Purchase Information</h1>
+        <section class="grid grid-cols-2 py-4 border-b-2 border-slate-100">
+            <div class="flex pr-6 border-r-2 border-slate-100">
+                <div>
+                    <img class="w-48 pr-2" src="images/700.jpg" alt="">
+                </div>
+                <div>
+                    <h3 class="block text-xl font-medium">Harry Potter and the Sorcerer's Stone</h3>
+                    <h4 class="text-lg">J.K Rolling</h4>
+                </div>
+            </div>
+            <div class="flex justify-between flex-col pl-6">
+                <div class="pb-4">
+                    <h3 class="text-xl"><span class="font-medium">Batgain Booksy</span> Fantasy/Paranormal</h3>
+                    <h4 class="text-lg italic">Running on sunday, Nov 1, 2022</h4>
+                </div>
+                <div class="flex border-y-2 border-slate-200 py-4">
+                    <input id="inputValue" class="grow py-2 pl-2 bg-slate-100 border-2 border-slate-200" type="text" placeholder="COUPON-CODE">
+                    <button id="applyBtn" class="ml-4 py-2 px-8 bg-slate-300 border-2 border-slate-700 font-bold">Apply</button>
+                </div>
+                <div class="py-4 ">
+                    <h4 class="text-lg block">Subtotal <span class="float-right">$<span id="prevSubValue">45.00</span></span></h4>
+                    <h3 class="text-lg font-medium block">Total <span class="float-right">$<span id="prevTotalValue">45.00</span></span></h3>
+                </div>
+            </div>
+        </section>
+        <section class="flex py-4">
+            <button class="py-2 px-8 bg-teal-500 text-white font-bold text-lg">Add to Cart</button>
+            <button class="ml-4 text-lg underline underline-offset-1 text-slate-800">Edit Promotion</button>
+        </section>
+    </main>
+    <footer class="mt-10 text-center text-slate-400">
+        <p>Terms Of Services & Policy</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
